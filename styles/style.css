@@ -218,15 +218,13 @@ Hero
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .hero-banner {
+  width: 90vw;
+  max-width: 1280px;
   text-align: left;
   color: #fff;
-  padding: 0 3rem;
-  position: absolute;
-  left: 0.1rem;
 }
 
 .hero-banner h1,
@@ -240,15 +238,16 @@ h2 {
 
 .hero-banner div h1 {
   margin: 0.8rem 0rem;
+  font-size: 4rem;
 }
 
 .hero-banner p {
   max-width: 30rem;
-  margin-left: auto;
-  margin-right: auto;
   color: #fff;
   letter-spacing: 0.25rem;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
+  margin-top: 0.7rem;
 }
 
 .hero-btn {
@@ -268,18 +267,21 @@ h2 {
   border-color: #fff;
 }
 
-@media screen and (min-width: 430px) {
+.header-button-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-horizontal-line {
+  width: 1.6rem;
+  height: 3px;
+  background: orange;
+}
+
+@media screen and (max-width: 768px) {
   .hero-banner {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 3em;
-  }
-  .hero-banner h1,
-  h2 {
-    font-size: 1rem;
   }
 }
 
