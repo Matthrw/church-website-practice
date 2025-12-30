@@ -218,6 +218,8 @@ Hero
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  position: relative;
 }
 
 .hero-banner {
@@ -227,6 +229,15 @@ Hero
   color: #fff;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .hero-banner h1,
 h2 {
   text-transform: uppercase;
@@ -282,6 +293,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .hero-banner {
     text-align: center;
+    /* width: 100vw; */
   }
 }
 
@@ -289,5 +301,658 @@ h2 {
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.3)),
       url("../images/hero-bg.jpg") center/cover no-repeat;
+  }
+}
+
+/* section */
+
+.section {
+  padding: 5rem 0;
+  scroll-margin-top: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-center {
+  width: 90vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Services
+===============
+*/
+
+.service {
+  margin-bottom: 3rem;
+  background: rgb(248, 236, 212);
+  padding: 2rem;
+  border-bottom: 10px solid rgb(234, 190, 102);
+}
+
+.service-icon {
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .service {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service-icon {
+    align-self: start;
+  }
+
+  .service-info {
+    padding-left: 1rem;
+  }
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* 
+=============== 
+welcome 
+
+=============== 
+*/
+
+.content h5,
+h2,
+p {
+  margin-bottom: 1.2rem;
+}
+
+.content {
+  margin-bottom: 0;
+}
+
+.content-btn {
+  background-color: rgb(247, 203, 121);
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.content-text {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-gallery {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@media screen and (min-width: 992px) {
+  .section-gallery {
+    width: 95vw;
+  }
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.second-image {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .section-gallery {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .section-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 95vw;
+    padding: 0 1rem;
+  }
+
+  .content-btn {
+    margin-bottom: 1rem;
+  }
+
+  .gallery {
+    margin-bottom: 0rem;
+  }
+
+  .second-image {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .second-image {
+    margin-top: 1rem;
+  }
+}
+
+.section-wrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-wrapper p {
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-wrapper h6,
+h3,
+p {
+  margin-top: 1.3rem;
+}
+
+/* 
+=============== 
+Benefits of our Church
+
+=============== 
+*/
+
+.benefit-list {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .benefit-list {
+    width: 95vw;
+  }
+}
+
+.benefit {
+  background: #f4f3f3;
+}
+
+.benefit-list-item {
+  position: relative;
+}
+
+.benefit-list-item::before {
+  content: "";
+  position: absolute;
+  top: 8.6rem;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(4px);
+}
+
+.listen-two,
+.listen-three,
+.listen-four {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.listen-one {
+  position: absolute;
+  bottom: 5.5rem;
+  left: 1rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.benefit-list-item p {
+  position: absolute;
+  left: 1rem;
+  bottom: 0;
+  color: #fff;
+}
+
+.listen {
+  position: absolute;
+  bottom: 4rem;
+}
+
+.benefit-list-item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .benefit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .benefit-list-item {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .benefit-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* 
+=============== 
+
+Upcoming Sermons
+
+=============== 
+*/
+
+.sermon {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+  .sermon {
+    width: 95vw;
+  }
+}
+
+.sermon-item {
+  background-color: rgb(240, 234, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem 3rem;
+  width: 30vw;
+  position: relative;
+}
+
+.sermon-date {
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.sermon-date p {
+  margin: 0.2rem 0;
+}
+
+.sermon-event h6 {
+  margin-top: 3rem;
+  color: orange;
+}
+
+.sermon-event h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sermon-event p {
+  color: rgb(89, 90, 91);
+}
+.sermon-time {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+}
+
+.sermon-date-one,
+.sermon-date-two {
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.sermon-date-one p,
+.sermon-date-two p {
+  margin: 0;
+}
+
+.sermon-date-one {
+  margin-bottom: 1rem;
+}
+
+.sermon-register-button {
+  border: none;
+  outline: none;
+  padding: 1.5rem 2rem;
+  background: #000;
+  color: white;
+  text-align: center;
+  width: 13rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+@media screen and (min-width: 769px) {
+  .Item-image-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .sermon-image {
+    width: 55vw;
+  }
+
+  .sermon-image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .sermon-image {
+    width: 90vw;
+  }
+
+  .sermon-image img {
+    width: 100%;
+  }
+  .sermon-item {
+    width: 90vw;
+    margin-bottom: 2rem;
+  }
+}
+
+/* 
+=============== 
+
+CTA
+
+=============== 
+*/
+
+.cta {
+  background: url("../images/3Xmcv5MjZpw.png") center/cover no-repeat;
+  width: 100vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-inner {
+  background: #fff;
+  width: 60vw;
+  border-bottom: 1rem solid rgb(232, 212, 174);
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.cta-write-up button {
+  border: none;
+  outline: none;
+  padding: 0.8rem 3rem;
+  background: rgb(232, 212, 174);
+  border-radius: 5px;
+}
+
+.cta-write-up p {
+  max-width: 20rem;
+}
+
+.cta-image {
+  width: 13rem;
+  max-width: 130px;
+}
+
+.cta-image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .cta {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cta-image {
+    display: none;
+  }
+}
+
+/* 
+=============== 
+
+Blog Posts
+
+=============== 
+*/
+
+.blog-posts {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.post {
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgb(243, 235, 219);
+}
+
+.post h5 {
+  color: orange;
+  margin-bottom: 0.5rem;
+}
+
+.post h2 {
+  font-size: 1.2rem;
+}
+
+.post.one {
+  border-bottom: 10px solid orange;
+}
+
+.post p {
+  max-width: 25rem;
+}
+
+.post-name {
+  text-transform: capitalize;
+  line-height: 1.6rem;
+}
+
+.post-name span {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .blog-posts {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 567px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .post {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .posts {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* 
+=============== 
+Footer 
+=============== 
+*/
+
+.footer {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+.content-left {
+  /* padding-right: 4rem; */
+}
+
+.content-left h2 {
+  color: rgb(236, 214, 174);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+.content-left span {
+  padding-right: 0.2rem;
+}
+.content-left p {
+  text-transform: uppercase;
+}
+
+.links-column h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  padding: 0;
+}
+
+.links-column ul a {
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+}
+
+.connect h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.connect a {
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+.subscription h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.input {
+  padding-top: 2rem;
+}
+
+.input input {
+  background: transparent;
+  outline: none;
+  border: 0;
+  border: 1px solid #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.input button {
+  border: none;
+  outline: none;
+  background: orange;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    grid-template-columns: 1.3fr 0.2fr 0.5fr 1.7fr;
   }
 }
