@@ -427,12 +427,6 @@ p {
   max-width: 900px;
 }
 
-@media screen and (min-width: 992px) {
-  .section-gallery {
-    width: 95vw;
-  }
-}
-
 .gallery img {
   width: 100%;
 }
@@ -855,16 +849,12 @@ Footer
 */
 
 .footer {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
-  max-width: 1170px;
+
   background-color: #000;
   color: #fff;
   padding: 2rem;
-}
-
-.content-left {
-  /* padding-right: 4rem; */
 }
 
 .content-left h2 {
@@ -936,7 +926,7 @@ Footer
 }
 @media screen and (min-width: 992px) {
   .footer {
-    width: 95vw;
+    width: 100vw;
   }
 }
 
@@ -954,5 +944,275 @@ Footer
 @media screen and (min-width: 992px) {
   .footer {
     grid-template-columns: 1.3fr 0.2fr 0.5fr 1.7fr;
+  }
+}
+
+/* 
+=============== 
+ABOUT US PAGE STYLE 
+=============== 
+*/
+
+.about-us {
+  background: hsl(185, 62%, 45%);
+}
+
+.hero-header {
+  color: #000;
+}
+
+.hero-banner h6 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.hero-banner h2 {
+  font-size: 3rem;
+}
+
+@media screen and (min-height: 768px) {
+  .about-us {
+    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.2)),
+      url("../images/vOeB66Yoriw.png") center/cover no-repeat;
+  }
+}
+
+/* 
+=============== 
+WELCOME PAGE 
+=============== 
+*/
+
+.heading h5,
+h2 {
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+.heading h2 {
+  font-size: 2rem;
+}
+
+.text {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-gallery-two {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.gallerys {
+  margin-top: 0.6rem;
+}
+
+.gallerys img {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .section-gallery-two {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .section-gallery-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 95vw;
+    padding: 0 1rem;
+  }
+
+  .gallerys {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-gallery-two {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .section-gallery-two .two img {
+    height: 450px;
+  }
+
+  .section-gallery-two .one,
+  .three {
+    margin-top: 2.5rem;
+  }
+}
+
+.bottom-content {
+  width: 55vw;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+  .right-content {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-content {
+    width: 90vw;
+  }
+}
+
+.right-content h3,
+.left-content h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.right-content h6,
+.left-content h6 {
+  text-transform: uppercase;
+}
+
+.right-content p,
+.left-content p {
+  color: #626161;
+}
+
+/* 
+=============== 
+Benefits of our church
+
+=============== 
+*/
+
+.section-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.sections img {
+  width: 100%;
+}
+
+.contents,
+.images {
+  width: 45vw;
+}
+
+.contents {
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sections {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .section-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    flex-direction: column;
+  }
+
+  .contents,
+  .images {
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
+}
+
+/* 
+=============== 
+
+Our Team
+
+=============== 
+*/
+
+.members {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgb(235, 234, 232);
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h4 {
+  text-transform: uppercase;
+}
+
+.info p {
+  text-transform: capitalize;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.social img {
+  color: #000;
+}
+
+.section-title h5 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .members {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .members {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 95vw;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .members {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
