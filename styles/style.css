@@ -212,7 +212,8 @@ Hero
 ===============
 */
 
-.hero {
+.hero,
+.sermons {
   min-height: 100vh;
   background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7));
   display: flex;
@@ -316,6 +317,10 @@ h2 {
   margin-bottom: 4rem;
 }
 
+.section-title p {
+  text-align: center;
+}
+
 .section-center {
   width: 90vw;
   max-width: 1280px;
@@ -396,7 +401,7 @@ welcome
 */
 
 .content h5,
-h2,
+.content h2,
 p {
   margin-bottom: 1.2rem;
 }
@@ -487,8 +492,8 @@ p {
 }
 
 .section-wrapper h6,
-h3,
-p {
+.section-wrapper h3,
+.section-wrapper p {
   margin-top: 1.3rem;
 }
 
@@ -667,11 +672,11 @@ Upcoming Sermons
 .sermon-register-button {
   border: none;
   outline: none;
-  padding: 1.5rem 2rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
   background: #000;
   color: white;
   text-align: center;
-  width: 13rem;
   border-radius: 5px;
   margin-top: 2rem;
   text-transform: uppercase;
@@ -685,6 +690,10 @@ Upcoming Sermons
   }
   .sermon-image {
     width: 55vw;
+  }
+
+  .sermon-item {
+    width: 40vw;
   }
 
   .sermon-image img {
@@ -1125,6 +1134,8 @@ Benefits of our church
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1213,6 +1224,136 @@ Our Team
 
 @media screen and (min-width: 992px) {
   .members {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* 
+=============== 
+Sermons-page Styles
+
+=============== 
+*/
+
+@media screen and (min-width: 768px) {
+  .sermons {
+    background: linear-gradient(rgba(0, 0, 0, 0.3)),
+      url("../images/U_b-eSviHvs.png") center/cover no-repeat;
+  }
+}
+
+.sermon-content {
+  width: 90vw;
+  max-width: 1280px;
+  text-align: left;
+}
+
+.sermon-content h6 {
+  font-size: 1rem;
+}
+
+.sermon-content h2 {
+  margin: 0.8rem 0rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sermon-content {
+    text-align: center;
+  }
+}
+
+/* All events */
+
+.sermon-items {
+  background-color: rgb(240, 234, 223);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem 3rem;
+  /* width: 30vw; */
+  position: relative;
+}
+
+.sermon-dates {
+  position: absolute;
+  right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.sermon-dates p {
+  margin: 0.2rem 0;
+}
+
+.sermon-events h6 {
+  margin-top: 3rem;
+  color: orange;
+}
+
+.sermon-events h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sermon-events p {
+  color: rgb(89, 90, 91);
+}
+.sermon-times {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: start;
+}
+
+.sermon-date-ones,
+.sermon-date-twos {
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.sermon-date-ones {
+  margin-bottom: 1rem;
+}
+
+.sermon-date-ones p,
+.sermon-date-twos p {
+  margin: 0;
+}
+
+.lists {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.sermon-items {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .lists {
+    width: 95vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .sermon-items {
+    margin-bottom: 0rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lists {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
