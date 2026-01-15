@@ -402,7 +402,7 @@ welcome
 
 .content h5,
 .content h2,
-p {
+.content p {
   margin-bottom: 1.2rem;
 }
 
@@ -860,10 +860,13 @@ Footer
 .footer {
   width: 100vw;
   margin: 0 auto;
-
   background-color: #000;
   color: #fff;
   padding: 2rem;
+}
+
+.content-left {
+  line-height: 2rem;
 }
 
 .content-left h2 {
@@ -872,6 +875,7 @@ Footer
   text-transform: capitalize;
   margin: 0;
   padding: 0;
+  margin-bottom: 1rem;
 }
 
 .content-left span {
@@ -993,7 +997,7 @@ WELCOME PAGE
 */
 
 .heading h5,
-h2 {
+.heading h2 {
   margin-bottom: 1.2rem;
   font-weight: bold;
 }
@@ -1270,7 +1274,6 @@ Sermons-page Styles
   flex-direction: column;
   align-items: start;
   padding: 2rem 3rem;
-  /* width: 30vw; */
   position: relative;
 }
 
@@ -1356,4 +1359,174 @@ Sermons-page Styles
   .lists {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+/* 
+=============== 
+
+Blog
+
+=============== 
+*/
+
+.blog-header {
+  background: white;
+  width: 90vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .blog-header {
+    width: 95vw;
+  }
+}
+
+.blog-main-post {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.blog-image {
+  width: 40vw;
+}
+
+.blog-image img {
+  width: 100%;
+}
+
+.blog-info {
+  width: 40vw;
+}
+
+.blog-name-nd-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-name-nd-date h2 {
+  font-size: 0.5rem;
+}
+
+.blog-info p {
+  font-size: 0.8rem;
+}
+
+.blog-info h2 {
+  font-size: 1.3rem;
+}
+
+.blog-info button {
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: rgb(246, 211, 147);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  color: white;
+}
+
+.blog-heading {
+  margin-top: 10rem;
+}
+
+.blog-heading h1 {
+  text-transform: uppercase;
+}
+
+/*
+=============== 
+ All Posts
+===============
+*/
+
+.posts {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.blog-content {
+  background-color: white;
+  padding: 1rem;
+}
+
+.blog-content h6 {
+  color: rgb(248, 215, 154);
+}
+
+.blog-content h4 {
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.posts .blog-item:nth-child(1) {
+  border-bottom: 10px solid rgb(248, 215, 154);
+}
+
+.blog-item a {
+  color: black;
+}
+
+.blog-name-info {
+  margin-top: 0.5rem;
+}
+
+/* 
+=============== 
+
+Blog Posts
+
+=============== 
+*/
+
+.blogpost-header {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  line-height: 2rem;
+}
+
+.main-image {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.blogpost-date-name {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.post-body {
+  width: 50vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.post-body .post-body-image {
+  width: 100%;
+}
+
+.post-body h2 {
+  margin: 1.2rem 0;
+}
+
+.post-body p:nth-child(1) {
+  margin-bottom: 1rem;
 }
