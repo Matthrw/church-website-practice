@@ -76,6 +76,10 @@ Navbar
   align-items: center;
 }
 
+.nav-logo a {
+  color: #fff;
+}
+
 .nav-center {
   width: 90vw;
   max-width: 1280px;
@@ -89,6 +93,7 @@ Navbar
   font-size: 2rem;
   margin-right: 0.2rem;
 }
+
 .nav-toggle {
   background: transparent;
   border: none;
@@ -245,11 +250,11 @@ h2 {
   text-transform: uppercase;
 }
 
-.hero-banner div h2 {
+.hero-banner h2 {
   font-size: 0.7rem;
 }
 
-.hero-banner div h1 {
+.hero-banner h1 {
   margin: 0.8rem 0rem;
   font-size: 4rem;
 }
@@ -295,7 +300,24 @@ h2 {
 @media screen and (max-width: 768px) {
   .hero-banner {
     text-align: center;
-    /* width: 100vw; */
+  }
+
+  .hero-banner h2 {
+    font-size: 0.5rem;
+    margin-top: 4rem;
+  }
+
+  .hero-banner h1 {
+    margin: 1rem 0rem;
+    font-size: 1rem;
+  }
+  .header-button-container p {
+    margin: 1rem 2rem;
+  }
+
+  .header-horizontal-line {
+    margin: 0;
+    pad: 0;
   }
 }
 
@@ -590,6 +612,16 @@ Benefits of our Church
   }
 }
 
+@media screen and (max-width: 768px) {
+  .benefit-list-item {
+    margin-bottom: 1rem;
+  }
+
+  .benefit-list-item p {
+    bottom: 1rem;
+  }
+}
+
 /* 
 =============== 
 
@@ -713,6 +745,19 @@ Upcoming Sermons
   .sermon-item {
     width: 90vw;
     margin-bottom: 2rem;
+    padding: 1.2rem;
+  }
+
+  .sermon-event p {
+    margin-bottom: 1rem;
+  }
+
+  .sermon-time {
+    font-size: 0.8rem;
+  }
+  .sermon-register-button {
+    font-size: 0.6rem;
+    padding: 0.7rem 1rem;
   }
 }
 
@@ -775,6 +820,18 @@ CTA
 @media screen and (max-width: 768px) {
   .cta-image {
     display: none;
+  }
+
+  .cta-inner {
+    padding: 1rem;
+  }
+
+  .cta-write-up p {
+    margin-bottom: 1rem;
+  }
+
+  .cta-write-up button {
+    padding: 0.5rem 2rem;
   }
 }
 
@@ -978,16 +1035,25 @@ ABOUT US PAGE STYLE
 .hero-banner h6 {
   font-size: 1.4rem;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .hero-banner h2 {
   font-size: 3rem;
+  color: #fff;
 }
 
-@media screen and (min-height: 768px) {
+@media screen and (min-width: 768px) {
   .about-us {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.2)),
       url("../images/vOeB66Yoriw.png") center/cover no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-banner h6 {
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -1265,6 +1331,14 @@ Sermons-page Styles
   .sermon-content {
     text-align: center;
   }
+
+  .sermon-content h6 {
+    font-size: 3rem;
+  }
+
+  .sermon-content h2 {
+    font-size: 2rem;
+  }
 }
 
 /* All events */
@@ -1394,6 +1468,10 @@ Blog
   }
   .blog-main-post .blog-image {
     width: 90vw;
+  }
+
+  .blog-item {
+    margin-bottom: 1rem;
   }
 }
 
